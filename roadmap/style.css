@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+:root {
+    --dark: #2b2b2b;
+    --light: lightsmoke;
+}
+
+@media(prefers-color-scheme: dark) {
+:root {
+    --dark: #fff;
+    --light: #2b2b2b;
+}
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+body {
+    font-family: monospace;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#back {
+    position: absolute;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--dark);
+}
+
+#main_title {
+    margin: 2vw auto 2vw auto;
+}
+
+#card_list {
+    width: 40vw;
+    margin: 0 auto 0 auto;
+}
+
+.card {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 2em 0 2em 0;
+}
+
+.card_title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card_about {
+    font-size: 1.5rem;
+}
+
+.card_by {
+    font-size: 1rem;
+}
+
+.card_user {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 5px 0 5px 0;
+}
+
+.card_pfp {
+    background-image: url('https://github.com/shqueel.png');
+    border-radius: 50%;
+    background-size: 110%;
+    background-position: center;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.username {
+    font-size: 1rem;
+}
