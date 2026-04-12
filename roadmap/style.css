@@ -65,6 +65,10 @@ a:visited {
     margin: 2em 0 2em 0;
 }
 
+#card_future {
+    border-style: dashed;
+}
+
 .card_title {
     font-size: 2em;
     font-weight: bold;
